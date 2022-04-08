@@ -1,4 +1,4 @@
-https://suraj15march.github.io/WebLab/lab1/
+https://suraj15march.github.io/WebLab/lab1/Homepage
 
 Home Page
 ![image](https://user-images.githubusercontent.com/61618872/162459813-d91329ec-2ef1-456c-9d78-c18208b6f06a.png)
