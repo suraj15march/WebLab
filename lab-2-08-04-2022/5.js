@@ -13,7 +13,7 @@ while (i < m && j < n) {
   }
   i++;
 }
-if (j == m) {
+if (j == n) {
   console.log("POSITIVE \n");
 } else {
   console.log("NEGATIVE \n");
