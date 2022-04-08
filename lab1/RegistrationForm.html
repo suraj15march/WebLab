@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <img src="friends.JPG" alt="" width="400" height="300">
+    <h1>
+        <center>Friendship Zone</center>
+    </h1>
+    <h2>
+        Add your details to register
+    </h2>
+    <form>
+        <label>Name : </label>
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+        <label>Email : </label>
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
+        <label>Age : </label>
+        <input type="number" name="age"><br><br>
+        <label>Birth Day : </label>
+        <input type="date" name="dob"><br><br>
+        <label>Gender : </label>
+        <input type="radio" id="gender" name="gender" value="male" />M
+        <input type="radio" id="gender" name="gender" value="female" />F
+        <br><br>
+        About :
+        <textarea></textarea><br><br>
+        <label>Phone : </label>
+        <input type="text" name="phone"><br><br>
+
+        <label>Interested in : </label>
+        <input type="checkbox" id="interest" name="interest" value="friend" />Friendship
+        <input type="checkbox" id="interest" name="interest" value="date" />Dating
+        <br><br>
+        <label for="myfile">Attachment : </label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <button onclick="location.href='RegistrationConfirmation.html'" type="button">Register</button>
+        <button onclick="location.href='RegistrationConfirmationforAdmin.html'" type="button">Register as Admin</button>
+    </form>
+    <br><br>
+</body>
+
+</html>
