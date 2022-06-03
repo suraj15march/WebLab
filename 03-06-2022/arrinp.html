@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [];
+        var arr2 = [];
+        var size1; var size2;
+        size1=prompt("enter size of array 1",size1);
+        size2=prompt("enter size of array 2",size2); 
+for(var a=0; a<size1; a++) 
+{
+     
+     
+    arr1[a] = prompt('In array 1 Enter array Element ' + (a+1));
+    
+}
+        
+        
+for(var b=0; b<size2; b++) 
+{
+     
+     
+    arr2[b] = prompt('In array 2 Enter array Element ' + (b+1));
+}
+       
+if(JSON.stringify(arr1)==JSON.stringify(arr2))
+   document.write("True");
+  else
+   document.write("False");
+
+    </script>
+</body>
+</html>
