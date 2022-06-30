@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    function valid_email(str)
+    {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+        return mailformat.test(str);
+    }
+    var input = prompt("Enter the email ID :")
+    if(valid_email(input))
+        document.write("Matches the pattern")
+    else
+        document.write("Not matching")
+</script>
+</html>

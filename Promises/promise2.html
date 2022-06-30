@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hotel booking system</h1>
+    <input id="val1" type="number" placeholder="Enter flight no." value="">
+    <button onclick="myfunc()"> Book flight</button>
+    <input id="val2" type="number" placeholder="Add your id " value="" >
+    <button onclick="myfunc2()">Book hotel</button>
+    <h2 id="res1"></h2>
+    <script>
+        var ans = document.getElementById("res1")
+        var validator = false;
+        let myfunc2=()=>{
+            let id = document.getElementById("val2").value;
+            let bookingHotel = new Promise(function(resolve,reject){
+            // flight?resolve(true):reject(false);
+            if(validator)resolve()
+            else reject()
+        }).then(function(value){
+            ans.innerHtml = "can book hotel"
+        }).catch(function(error){
+            ans.innerHtml="cant book hotel"
+        })
+        }
+        let myfunc=()=>{
+            let flight = document.getElementById("val1").value;
+            let bookingFlight = new Promise(function(resolve,reject){
+                flight?resolve(true):reject(false);
+            })
+            bookingFlight.then(function(value){             
+                validator =true;
+            }).catch(function(error){
+                validator = false;
+            })
+            ans.innerHtml="flight booked"
+        }
+    </script>
+</body>
+</html>

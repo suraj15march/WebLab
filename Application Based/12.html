@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function printFarmInventory(Cows, Chickens){
+        Cows = Cows.toString();
+        Chickens = Chickens.toString();
+        var zero = 3;
+
+        for(i=zero-Cows.length;i>0;i--)
+            Cows = "0"+Cows;
+        for(i=zero-Chickens.length;i>0;i--)
+            Chickens = "0"+Chickens
+        
+        document.write(""+Cows+" Cows"+"<br>")
+        document.write(""+Chickens+" Chickens"+"<br>")
+    }
+    printFarmInventory(7,11);
+</script>
+<body>    
+</body>
+</html>

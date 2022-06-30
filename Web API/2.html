@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<textarea id="word" oninput="countWord()"
+		rows="10" cols="60">
+	</textarea>
+	<br><br>	
+<p> You've written 
+		<span id="show">0</span>
+        words and 
+	</p>
+	<script>
+		function countWord() {
+			var words = document
+				.getElementById("word").value;
+			var count = 0;
+			var split = words.split(' ');
+			for (var i = 0; i < split.length; i++) {
+				if (split[i] != "") {
+					count += 1;
+				}
+			}
+			document.getElementById("show")
+				.innerHTML = count;
+		}
+        function countWord() {
+			var words = document
+				.getElementById("word").value;
+			var count = 0;
+			var split = words.split(' ');
+			for (var i = 0; i < split.length; i++) {
+				if (split[i] != "") {
+					count += 1;
+				}
+			}
+			document.getElementById("show")
+				.innerHTML = count;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label for="">String Methods</label> -->
+    <br>
+    <select name="" id="select" onchange="lower();">
+        <option value="1">String Methods</option>
+        <option value="2">Lowercase</option>
+        <option value="3">Uppercase</option>
+    </select>
+</body>
+<script>
+    function lower()
+    {
+        var input = document.getElementById("select");
+        var index = input.options[input.selectedIndex].value;
+        switch(index){
+            case "2" : 
+            var str1 = prompt("Enter the string :")                
+                document.write(str1.toLowerCase()+"<br>")
+                break;
+            case "3" : 
+                var str1 = prompt("Enter the string :")                
+                document.write(str1.toUpperCase()+"<br>")
+                break;
+        }
+    }
+</script>
+</html>

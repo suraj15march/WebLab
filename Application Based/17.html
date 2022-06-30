@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    function find_more_than_average(a, n){
+        sum = 0
+        for(var i=0;i<n;i++)
+            sum += parseInt(a[i])
+        avg = sum/n
+        // document.write(sum)
+        count = 0
+        for(var i=0;i<n;i++)
+            if(a[i]>avg)
+                count++
+        return (count*100)/n
+    }
+    function generate_frequency(a,n){
+        b=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        for(var i=0;i<n;i++)
+            b[a[i]]++
+        return b
+    }
+    var input = prompt("Enter the Array :")
+    a = input.split(",")
+    // document.write(a[0])
+    n = a.length
+    average = find_more_than_average(a,n)
+    b = generate_frequency(a,n)
+    document.write("More than average : "+average+"<br>Frequency : "+b)
+</script>
+</html>
